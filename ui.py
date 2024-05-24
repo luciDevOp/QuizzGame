@@ -20,7 +20,7 @@ class QuizzInterface:
 
         self.canvas = Canvas(width=300, height=250)
         self.canvas.grid(row=1, column=0, columnspan=2, pady=50)
-        self.question_text = self.canvas.create_text(150, 125, text="Question", font=("Arial", 20, "italic"), width=280)
+        self.question_text = self.canvas.create_text(150, 125, text="Question", fill="black", font=("Arial", 20, "italic"), width=280)
         self.false_button = Button(image=false_image, command=self.false_pressed)
         self.false_button.grid(row=2, column=0, sticky="S")
         self.true_button = Button(image=true_image, command=self.true_pressed)
